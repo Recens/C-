@@ -6,19 +6,19 @@ namespace LB1
     class Matrix
     {
         public int size;
-        public double[,] mas;
+        public double[,] mat;
 
 
 
         public Matrix(int size)
         {
             this.size = size;
-            mas = new double[size, size];
+            mat = new double[size, size];
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    mas[i, j] = double.Parse(Console.ReadLine());
+                    mat[i, j] = double.Parse(Console.ReadLine());
                 }
             }
 
@@ -26,7 +26,7 @@ namespace LB1
             {
                 for (int j = 0; j < size; j++)
                 {
-                    Console.Write(mas[i, j] + " ");
+                    Console.Write(mat[i, j] + " ");
                 }
 
                 Console.WriteLine();
@@ -41,7 +41,7 @@ namespace LB1
             {
                 for (int j = 0; j < size; j += 2)
                 {
-                    sum = sum + mas[i, j];
+                    sum = sum + mat[i, j];
                 }
 
             }
@@ -59,7 +59,7 @@ namespace LB1
             {
                 for (int j = 0; j < size; j++)
                 {
-                    temp[i, j] = mas[i, j] * x;
+                    temp[i, j] = mat[i, j] * x;
                 }
 
             }
@@ -75,7 +75,7 @@ namespace LB1
             }
         }
 
-        public bool stohas()
+        public bool Stochasticity()
         {
             bool point = false;
             double row = 0;
@@ -85,7 +85,7 @@ namespace LB1
                 row = 0;
                 for (int j = 0; j < size; j++)
                 {
-                    row = row + mas[i, j];
+                    row = row + mat[i, j];
 
                 }
 
@@ -104,7 +104,7 @@ namespace LB1
                 col = 0;
                 for (int i = 0; i < size; i++)
                 {
-                    col += mas[i, j];
+                    col += mat[i, j];
 
                 }
 
@@ -136,7 +136,7 @@ namespace LB1
             rt.Sum();
             rt.multiplication_scalar(2);
             
-            Console.WriteLine(rt.stohas());
+            Console.WriteLine(rt.Stochasticity());
 
 
 

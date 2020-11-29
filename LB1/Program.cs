@@ -80,6 +80,8 @@ namespace LB1
             bool point = false;
             double row = 0;
             double col = 0;
+            double rows = 0;
+            double cols = 0;
             for (int i = 0; i < size; i++)
             {
                 row = 0;
@@ -91,11 +93,7 @@ namespace LB1
 
                 if (row == 1)
                 {
-                    point =  true;
-                }
-                else
-                {
-                    point = false;
+                    rows++;
                 }
             }
             Console.WriteLine(row);
@@ -110,19 +108,15 @@ namespace LB1
 
                 if (col == 1)
                 {
-                    point = true;
+                    cols++;
                 }
-                else
-                {
-                    point= false;
-                }
+                
             }
             Console.WriteLine(col);
-            if (point == true)
+            if (rows==size && cols==size)
             {
                 return true;
             }
-
             return false;
         }
     }

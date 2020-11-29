@@ -1,0 +1,145 @@
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
+
+namespace LB1
+{
+    class Matrix
+    {
+        public int size;
+        public double[,] mas;
+
+
+
+        public Matrix(int size)
+        {
+            this.size = size;
+            mas = new double[size, size];
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    mas[i, j] = double.Parse(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Console.Write(mas[i, j] + " ");
+                }
+
+                Console.WriteLine();
+            }
+
+        }
+
+        public void Sum()
+        {
+            double sum = 0;
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j += 2)
+                {
+                    sum = sum + mas[i, j];
+                }
+
+            }
+
+            Console.Write("Сумма строк = ");
+            Console.Write(sum);
+            Console.Write("\n");
+        }
+
+        public void multiplication_scalar(int x)
+        {
+            Double[,] temp;
+            temp = new double[size, size];
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    temp[i, j] = mas[i, j] * x;
+                }
+
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Console.Write(temp[i, j] + " ");
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+        public bool stohas()
+        {
+            bool point = false;
+            double row = 0;
+            double col = 0;
+            for (int i = 0; i < size; i++)
+            {
+                row = 0;
+                for (int j = 0; j < size; j++)
+                {
+                    row = row + mas[i, j];
+
+                }
+
+                if (row == 1)
+                {
+                    point =  true;
+                }
+                else
+                {
+                    point = false;
+                }
+            }
+            Console.WriteLine(row);
+            for (int j = 0; j < size; j++)
+            {
+                col = 0;
+                for (int i = 0; i < size; i++)
+                {
+                    col += mas[i, j];
+
+                }
+
+                if (col == 1)
+                {
+                    point = true;
+                }
+                else
+                {
+                    point= false;
+                }
+            }
+            Console.WriteLine(col);
+            if (point == true)
+            {
+                return true;
+            }
+
+            return false;
+        }
+    }
+
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            Matrix rt = new Matrix(3);
+            rt.Sum();
+            rt.multiplication_scalar(2);
+            
+            Console.WriteLine(rt.stohas());
+
+
+
+        }
+    }
+}

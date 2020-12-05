@@ -15,6 +15,10 @@ namespace lb_2
         {
             Application.Exit();
         }
-        
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

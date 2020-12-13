@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace lb_2
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
@@ -22,7 +23,8 @@ namespace lb_2
         {
             Form2 f2 = new Form2(this);
             f2.ShowDialog();
-            
+            this.Hide();
+
         }
     }
 }

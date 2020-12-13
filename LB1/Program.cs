@@ -126,7 +126,7 @@ namespace LB1
         public static void Main(string[] args)
         {
 
-            Matrix rt = new Matrix(3);
+            Matrix rt = new Matrix(2);
             rt.Sum();
             rt.multiplication_scalar(2);
             

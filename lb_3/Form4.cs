@@ -22,35 +22,10 @@ namespace lb_3
 
         }
 
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedItem.ToString() == "Yes")
-            {
-                count++;
-            }
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedItem.ToString() == "Yes")
-            {
-                count++;
-            }
-        }
-
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedItem.ToString() == "Yes")
-            {
-                count++;
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 f5= new Form5(sls, this);
-            f5.ShowDialog();
+            form4_5 f4_5= new form4_5(sls, this);
+            f4_5.ShowDialog();
             this.Hide();
             
         }

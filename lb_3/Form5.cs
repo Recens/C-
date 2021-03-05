@@ -6,9 +6,9 @@ namespace lb_3
     public partial class Form5 : Form
     {
         public string sls;
-        public Form5(string sls, Form4 f_4)
+        public Form5(string sls, form4_5 f_45)
         {
-            f_4.Visible = false;
+            f_45.Visible = false;
             this.sls = sls;
             InitializeComponent();
             label1.Text = "Thank "+this.sls+" for taking the survey." ;

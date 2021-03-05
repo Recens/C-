@@ -3,19 +3,19 @@ using System.Windows.Forms;
 
 namespace lb_3
 {
-    public partial class Form2 : Form
+    public partial class form4_5 : Form
     {
-        public Form2(Form1 f_1)
+        public string sls;
+        public form4_5(string sls, Form4 ff_4)
         {
+            this.sls = sls;
             InitializeComponent();
-            f_1.Visible = false;
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3(this);
-            f3.ShowDialog();
+            Form5 f5 = new Form5(sls,this);
+            f5.ShowDialog();
         }
     }
 }

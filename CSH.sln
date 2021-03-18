@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lb_3", "lb_3\lb_3.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{537B8B19-6822-4CE7-A22D-85C3E4842EC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_2", "Lab_2\Lab_2.csproj", "{21489B02-DD6F-46A6-903D-EA1F241400EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{537B8B19-6822-4CE7-A22D-85C3E4842EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{537B8B19-6822-4CE7-A22D-85C3E4842EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{537B8B19-6822-4CE7-A22D-85C3E4842EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21489B02-DD6F-46A6-903D-EA1F241400EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21489B02-DD6F-46A6-903D-EA1F241400EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21489B02-DD6F-46A6-903D-EA1F241400EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21489B02-DD6F-46A6-903D-EA1F241400EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
